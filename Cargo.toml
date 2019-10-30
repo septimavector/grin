@@ -22,7 +22,7 @@ path = "src/bin/grin.rs"
 [dependencies]
 blake2-rfc = "0.2"
 chrono = "0.4.4"
-clap = { version = "2.31", features = ["yaml"] }
+clap = { git = "https://github.com/clap-rs/clap" , features = ["yaml"] }
 ctrlc = { version = "3.1", features = ["termination"] }
 humansize = "1.1.0"
 serde = "1"
@@ -55,3 +55,5 @@ built = "0.3"
 [dev-dependencies]
 grin_chain = { path = "./chain", version = "3.0.0-alpha.1" }
 grin_store = { path = "./store", version = "3.0.0-alpha.1" }
+
+
